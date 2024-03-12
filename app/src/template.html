@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-wr"></div>
+    <div class="app-wr">
+        
+        <!-- Header -->
+        <header>
+            <h1>TODO</h1>
+            <!-- when btn clicked, icon changed to icon-sun.svg and changes theme -->
+            <button id="theme-icon">
+                <img src="../src/images/icon-moon.svg" alt="moon icon">
+            </button>
+        </header>
+        
+        <main>
+
+
+            <!-- Todo Input-->
+            <section class="todo-input-wr">
+                <div class="checkbox unchecked"></div>
+                <input type="text" id="todo-input" placeholder="Create a new todo…">
+            </section>
+            
+            <section class="todo-list-wr">
+
+                <!-- Checked Item -->
+                <div class="todo-item-wr">
+                    <div class="left-col">
+                        <!-- Checked class added-->
+                        <div class="checkbox checked">
+                            <img src="../src/images/icon-check.svg" alt="check icon">
+                        </div>
+                        <!-- Completed class added -->
+                        <p class="todo-desc completed">Complete online JavaScript course</p>
+                    </div>
+                    <div class="right-col">
+                        <img src="../src/images/icon-cross.svg" alt="cross icon" class="cross-icon">
+                    </div>
+                </div>
+                
+                <!-- Checked Item -->
+                <div class="todo-item-wr">
+                    <div class="left-col">
+                        <!-- Checked class added-->
+                        <div class="checkbox unchecked">
+                            <img src="../src/images/icon-check.svg" alt="check icon">
+                        </div>
+                        <!-- Completed class added -->
+                        <p class="todo-desc">Complete online JavaScript course</p>
+                    </div>
+                    <div class="right-col">
+                        <img src="../src/images/icon-cross.svg" alt="cross icon" class="cross-icon">
+                    </div>
+                </div>               
+
+                <div class="todo-list-footer-wr">
+                    <!-- Needs to tell user how many active items are in the list-->
+                    <p class="todo-count">X items left</p>
+                    <button id="clear-completed-btn">Clear Completed</button>
+                </div>
+
+            </section>
+
+        </main>
+        
+        <!-- View Tab btns-->
+        <section class="list-view-btns-wr">
+            <!-- when current view selected, active class added to btn-->
+            <button class="list-view-btn active">All</button>
+            <button class="list-view-btn">Active</button>
+            <button class="list-view-btn">Completed</button>
+        </section>
+        
+    </div>
+</body>
+</html>
