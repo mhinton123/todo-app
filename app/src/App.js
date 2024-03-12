@@ -5,7 +5,7 @@ import TodoInput from './components/TodoInput.jsx'
 import TodoList from './components/TodoList.jsx'
 import Footer from './components/Footer.jsx'
 
-function App() {
+export default function App() {
     
     const [todoItemsArr, setTodoItemsArr] = React.useState([])
     const [isDarkTheme, setIsDarkTheme] = React.useState(false)
@@ -55,4 +55,3 @@ function App() {
   )
 }
 
-export default App;
